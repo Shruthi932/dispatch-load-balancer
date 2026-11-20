@@ -53,8 +53,9 @@ public class GlobalExceptionHandler {
     public ResponseEntity<Map<String, Object>> handleGeneralErrors(
             Exception exception) {
 
-        Map<String, Object> response = new HashMap<>();
+        exception.printStackTrace();
 
+        Map<String, Object> response = new HashMap<>();
         response.put("message", "An unexpected error occurred.");
         response.put("status", "error");
 
