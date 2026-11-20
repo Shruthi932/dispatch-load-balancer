@@ -13,7 +13,12 @@ The application processes delivery orders and available fleet vehicles, then gen
 - **Vehicle Capacity:** Orders are assigned only when the vehicle has sufficient remaining capacity.
 - **Distance Optimization:** The system selects the nearest feasible vehicle using the Haversine formula.
 - **Unassigned Orders:** Orders that cannot be assigned to any available vehicle are reported separately.
+  
+ ## Live Deployment
 
+Base URL: https://dispatch-load-balancer-z7t4.onrender.com/
+
+Swagger UI: https://dispatch-load-balancer-z7t4.onrender.com/swagger-ui/index.html
 ## Technology Stack
 
 | Technology | Purpose |
