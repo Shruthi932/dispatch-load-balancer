@@ -52,7 +52,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     public ResponseEntity<Map<String, Object>> handleGeneralErrors(
             Exception exception) {
-
+        System.err.println("ROOT DEBUG: GLOBAL EXCEPTION HANDLER CALLED");
         exception.printStackTrace();
 
         Map<String, Object> response = new HashMap<>();
